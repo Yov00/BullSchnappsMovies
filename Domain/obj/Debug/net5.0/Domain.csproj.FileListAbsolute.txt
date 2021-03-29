@@ -1,0 +1,12 @@
+E:\CODE\.NET\RESTAPI\Domain\bin\Debug\net5.0\Domain.deps.json
+E:\CODE\.NET\RESTAPI\Domain\bin\Debug\net5.0\Domain.dll
+E:\CODE\.NET\RESTAPI\Domain\bin\Debug\net5.0\ref\Domain.dll
+E:\CODE\.NET\RESTAPI\Domain\bin\Debug\net5.0\Domain.pdb
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.dll
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\ref\Domain.dll
+E:\CODE\.NET\RESTAPI\Domain\obj\Debug\net5.0\Domain.pdb
