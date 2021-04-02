@@ -2,6 +2,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using API.Data;
 using API.Models;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -19,13 +20,14 @@ namespace API.Controllers
         public IMoviesRepo _repository { get; private set; }
 
         [HttpGet]
+        [EnableQuery]
         public IActionResult GetMovies([FromQuery] string sortingOrder,[FromQuery]int pageNumber, [FromQuery]int pageSize)
         {
-            string orderBy = "no_order";
+            string orderBy = "default_order";
             Pagination pagination = new Pagination
             {
-                PageNumber = pageNumber,
-                PageSize = pageSize
+                PageNumber = pageNumber>0 ? pageNumber : 1,
+                PageSize = pageSize>0 ? pageSize : 20
             };
 
             if(sortingOrder != null)
@@ -36,10 +38,12 @@ namespace API.Controllers
             var movies = _repository.GetAllMoves(orderBy,pagination);
             var metadata = new
             {
-                movies.TotalCount,
+                CurrentPage = pagination.PageNumber,
                 movies.PageSize,
+                movies.TotalCount,
                 movies.HasNext,
                 movies.HasPrevious,
+             
 
             };
 
@@ -61,7 +65,7 @@ namespace API.Controllers
             {
                 return Ok(movie);
             }
-            return NoContent();
+            return NotFound();
         }
         
     }

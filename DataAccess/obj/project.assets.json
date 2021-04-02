@@ -954,19 +954,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\NuclearSubmarine\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CODE\\.NET\\RESTAPI\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "c:\\CODE\\DOTNET\\BullSchnappsMovies\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "E:\\CODE\\.NET\\RESTAPI\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\CODE\\.NET\\RESTAPI\\DataAccess\\obj\\",
+      "projectPath": "c:\\CODE\\DOTNET\\BullSchnappsMovies\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\NuclearSubmarine\\.nuget\\packages\\",
+      "outputPath": "c:\\CODE\\DOTNET\\BullSchnappsMovies\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NuclearSubmarine\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -980,8 +980,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\CODE\\.NET\\RESTAPI\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\CODE\\.NET\\RESTAPI\\Domain\\Domain.csproj"
+            "c:\\CODE\\DOTNET\\BullSchnappsMovies\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\CODE\\DOTNET\\BullSchnappsMovies\\Domain\\Domain.csproj"
             }
           }
         }

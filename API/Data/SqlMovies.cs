@@ -38,6 +38,7 @@ namespace API.Data
                     movies = movies.OrderByDescending(m => m.Original_title);
                     break;
                 default:
+                movies = movies.OrderByDescending(m => m.Release_date);
                     break;
             }
             return PagedList<Movie>.ToPagedList(movies, pagination.PageNumber, pagination.PageSize);

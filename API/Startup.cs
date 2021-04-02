@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNet.OData.Extensions;
 
 namespace API
 {
@@ -39,7 +40,7 @@ namespace API
                         builder.WithOrigins("http://localhost:3000");
                     });
             });
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddScoped<IMoviesRepo, SqlMovies>();
             services.AddDbContext<DataContext>(opt =>
             {
@@ -48,6 +49,8 @@ namespace API
 
             // API Consuming MOVIES DB
             services.AddHttpClient();
+
+            services.AddOData();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,12 +65,11 @@ namespace API
             // app.UseHttpsRedirection();
 
             app.UseRouting();
-            
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
+                endpoints.EnableDependencyInjection();
+                endpoints.Select().Filter().Expand();
                 endpoints.MapControllers();
             });
         }
